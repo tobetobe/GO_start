@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"reflect"
+	"strings"
 )
 
-var a string = "G"
+// var a string = "G"
 
 func main() {
 	// fmt.Printf("hello, world\n")
@@ -61,27 +63,38 @@ func main() {
 
 	// fmt.Println(reflect.TypeOf(float32(a)))
 
-	type myStr string
+	// type myStr string
 
-	var str myStr = `
-		Good Morning!
-		Good Afternoon!😊
-	`
+	// var str myStr = `
+	// 	Good Morning!
+	// 	Good Afternoon!😊
+	// `
 
-	fmt.Println(str, len(str), str[0])
+	// fmt.Println(str, len(str), str[0])
 
+	var str string = "abcdefghijklmn"
+
+	sl := strings.Split(str, "")
+
+	fmt.Println(str)
+
+	for index, val := range sl {
+		fmt.Println(index, val)
+	}
+
+	fmt.Println(reflect.TypeOf(sl))
 }
 
-func n() {
-	print(a)
-}
+// func n() {
+// 	print(a)
+// }
 
-func m() {
-	a = "O"
-	print(a)
-	c()
-}
+// func m() {
+// 	a = "O"
+// 	print(a)
+// 	c()
+// }
 
-func c() {
-	fmt.Printf(" c : %s ", a)
-}
+// func c() {
+// 	fmt.Printf(" c : %s ", a)
+// }
