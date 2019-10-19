@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 )
 
 var a string = "G"
@@ -58,9 +57,19 @@ func main() {
 
 	// fmt.Println(a == int(b))
 
-	a := 1 << 10
+	// a := 1 << 10
 
-	fmt.Println(reflect.TypeOf(float32(a)))
+	// fmt.Println(reflect.TypeOf(float32(a)))
+
+	type myStr string
+
+	var str myStr = `
+		Good Morning!
+		Good Afternoon!😊
+	`
+
+	fmt.Println(str, len(str), str[0])
+
 }
 
 func n() {
