@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"reflect"
-	"strings"
-)
+import "fmt"
 
 // var a string = "G"
 
@@ -72,17 +68,54 @@ func main() {
 
 	// fmt.Println(str, len(str), str[0])
 
-	var str string = "abcdefghijklmn"
+	// var str string = "abcdefghijklmn"
 
-	sl := strings.Split(str, "")
+	// sl := strings.Split(str, "")
 
-	fmt.Println(str)
+	// fmt.Println(str)
 
-	for index, val := range sl {
-		fmt.Println(index, val)
+	// for index, val := range sl {
+	// 	fmt.Println(index, val)
+	// }
+
+	// fmt.Println(reflect.TypeOf(sl))
+
+	// res := strings.Compare("abc", "ab")
+
+	// res := strings.NewReader("abc")
+
+	// fmt.Println(res)
+
+	// a := 10
+	// var intP *int = &a
+
+	// fmt.Println(intP)
+
+	// *intP = 20
+
+	// fmt.Println(*intP, intP)
+
+	k := 6
+	switch k {
+	case 4:
+		fmt.Println("was <= 4")
+		fallthrough
+	case 5:
+		fmt.Println("was <= 5")
+		fallthrough
+	case 6:
+		fmt.Println("was <= 6")
+		fallthrough
+	case 7:
+		fmt.Println("was <= 7")
+		fallthrough
+	case 8:
+		fmt.Println("was <= 8")
+		fallthrough
+	default:
+		fmt.Println("default case")
 	}
 
-	fmt.Println(reflect.TypeOf(sl))
 }
 
 // func n() {
