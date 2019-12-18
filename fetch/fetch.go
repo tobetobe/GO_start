@@ -5,9 +5,11 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+
 )
 
 func main() {
+	fmt.Println("hello fetch!", os.Args)
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)
 		if err != nil {
@@ -20,6 +22,6 @@ func main() {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
-		fmt.Fprintf("%s", b)
+		fmt.Println(string(b))
 	}
 }
