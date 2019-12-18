@@ -25,3 +25,13 @@
   - 判断是否为字母：unicode.IsLetter(ch)
   - 判断是否为数字：unicode.IsDigit(ch)
   - 判断是否为空白符号：unicode.IsSpace(ch)
+
+### 运行期和编译期
+
+- const 赋值 值要可以在编译期得到
+
+### 预定义常量
+
+- false
+- true
+- iota
