@@ -12,7 +12,9 @@ func main() {
 
 	fmt.Println("pre", chs)
 	for i := 0; i < 10; i++ {
+		fmt.Println(chs[i])
 		chs[i] = make(chan int)
+		fmt.Println("chs[i]", chs[i])
 		go Count(chs[i])
 	}
 	for _, ch := range chs {
