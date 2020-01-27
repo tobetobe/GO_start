@@ -95,26 +95,28 @@ func main() {
 
 	// fmt.Println(*intP, intP)
 
-	k := 6
-	switch k {
-	case 4:
-		fmt.Println("was <= 4")
-		fallthrough
-	case 5:
-		fmt.Println("was <= 5")
-		fallthrough
-	case 6:
-		fmt.Println("was <= 6")
-		fallthrough
-	case 7:
-		fmt.Println("was <= 7")
-		fallthrough
-	case 8:
-		fmt.Println("was <= 8")
-		fallthrough
-	default:
-		fmt.Println("default case")
-	}
+	// k := 6
+	// switch k {
+	// case 4:
+	// 	fmt.Println("was <= 4")
+	// 	fallthrough
+	// case 5:
+	// 	fmt.Println("was <= 5")
+	// 	fallthrough
+	// case 6:
+	// 	fmt.Println("was <= 6")
+	// 	fallthrough
+	// case 7:
+	// 	fmt.Println("was <= 7")
+	// 	fallthrough
+	// case 8:
+	// 	fmt.Println("was <= 8")
+	// 	fallthrough
+	// default:
+	// 	fmt.Println("default case")
+	// }
+	fmt.Printf("%T\n", [...]int{1,2,3})
+	fmt.Print([...]int{1,2,3})
 
 }
 
